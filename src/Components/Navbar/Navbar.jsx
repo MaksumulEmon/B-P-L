@@ -5,8 +5,8 @@ import imgdoller from "../../assets/dollar.png"
 
 const Navbar = () => {
     return (
-        <div>
-            <div className="flex justify-between bg-base-200 shadow-sm mt-2 mb-4 md:pl-7 md:pr-7">
+        
+            <div className="flex justify-between  shadow-sm mt-2 mb-4 md:pl-7 md:pr-7 sticky top-0 z-50 bg-white">
                 <div className="flex-1">
                     <img src={navleftimg} alt="" />
                 </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
 
             </div>
-        </div>
+        
     );
 };
 
