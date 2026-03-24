@@ -8,9 +8,8 @@ const Navbar = () => {
         <div>
             <div className="flex justify-between bg-base-200 shadow-sm mt-2 mb-4 md:pl-7 md:pr-7">
                 <div className="flex-1">
-                    <img  src={navleftimg} alt="" />
+                    <img src={navleftimg} alt="" />
                 </div>
-
 
 
                 <div className=' flex items-center gap-7'>
