@@ -13,7 +13,7 @@ const Players = ({ playersPromise,setCoin,coin }) => {
             {/* <h2>Player:{players.length}</h2> */}
 
             <div className='flex justify-between gap-4 items-center'>
-               {selectedType ==="available" ? <h2 className='text-3xl font-bold'>Avaiable Players</h2> : <h2 className='text-3xl font-bold'>Selected Players</h2>}
+               {selectedType ==="available" ? <h2 className='text-3xl font-bold'>Avaiable Players</h2> : <h2 className='text-3xl font-bold'>Selected Players ({selectedPlayers.length}/{players.length})</h2>}
 
                 <div className='flex '>
                     <button onClick={() => setSelectedType("available")} 
@@ -23,7 +23,7 @@ const Players = ({ playersPromise,setCoin,coin }) => {
 
                     <button onClick={() => setSelectedType("selected")} 
                      className={`btn ${selectedType === "selected" ? "bg-[#E7FE29]" : ""}  rounded-l-none font-bold rounded-r-xl`}>
-                        Selected(0  )
+                        Selected ({selectedPlayers.length})
                         </button>
                 </div>
             </div>
