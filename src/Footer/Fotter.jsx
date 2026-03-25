@@ -8,7 +8,7 @@ const Fotter = () => {
 
             <div className='w-full md:w-[50%] mx-auto'>
 
-                <div className='relative p-8 md:p-12 rounded-xl h-[350px] overflow-hidden'>
+                <div className='relative p-8 md:p-12 rounded-xl h-88 overflow-hidden'>
 
                     {/* Background Image */}
                     <div
