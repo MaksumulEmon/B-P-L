@@ -20,8 +20,8 @@
 
 
 import React, { useState } from 'react';
-import { FaUser } from 'react-icons/fa';
-import { MdDelete } from "react-icons/md";
+
+import Selectedcard from './Selectedcard';
 
 
 
@@ -30,7 +30,7 @@ const SelectedPlayers = ({ selectedPlayers,
     setSelectedPlayers,
     setCoin,
     coin,
-    }) => {
+}) => {
     console.log(selectedPlayers, "selectedPlayers");
 
 
@@ -45,24 +45,18 @@ const SelectedPlayers = ({ selectedPlayers,
 
     return (
         <div>
-            {selectedPlayers.map((player, ind) => {
-                return <div key={ind} className='flex items-center gap justify-between p-5 rounded-2xl border mt-5 '>
-
-
-                    <div className='flex items-center gap-5'>
-                        <img src={player.playerImg} alt="" className='w-auto h-16 rounded' />
-                        <div>
-                            <p className='flex items-center gap-2 text-lg font-bold '><FaUser /> {player.playerName}</p>
-
-                            <p className='text-[rgba(19,19,19,0.6)]'>{player.playerType}</p>
-
-                        </div>
-                    </div>
-                    <button onClick={() => handleDeleteSelectedPlayer(player)} className='btn color-gray-300'>
-                        < MdDelete />
-                    </button>
+            {selectedPlayers.length === 0 ?
+                <div className='h-100 flex flex-col  items-center justify-center gap-2'>
+                    <h2 className='font-semibold text-2xl'>No players selected yet</h2>
+                    <p>Go to available tab  to select players</p>
                 </div>
-            })}
+
+
+                : selectedPlayers.map((player, ind) => {
+                    return (
+                        <Selectedcard key={ind} player={player} handleDeleteSelectedPlayer={handleDeleteSelectedPlayer}></Selectedcard>
+                    );
+                })}
         </div>
 
 

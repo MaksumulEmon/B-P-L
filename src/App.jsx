@@ -4,6 +4,7 @@ import Hero from './Components/Hero/Hero'
 import Navbar from './Components/Navbar/Navbar'
 import Players from './Players/Players'
 import Fallback from './Fallback/Fallback'
+import { ToastContainer } from 'react-toastify'
 
 
 // Load Data from json
@@ -14,7 +15,7 @@ const fetchPlayers = async () => {
 }
 function App() {
   const playersPromise = fetchPlayers();
-  const [coin, setCoin] =useState(500000);
+  const [coin, setCoin] = useState(500000);
 
   return (
     <>
@@ -25,6 +26,9 @@ function App() {
       <Suspense fallback={<Fallback></Fallback>}>
         <Players playersPromise={playersPromise} setCoin={setCoin} coin={coin}></Players>
       </Suspense>
+
+      {/* React toastfly */}
+      <ToastContainer/>
     </>
   )
 }
