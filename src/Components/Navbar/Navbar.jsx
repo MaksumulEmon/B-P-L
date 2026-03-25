@@ -3,7 +3,7 @@ import React from 'react';
 import navleftimg from "../../assets/logo.png"
 import imgdoller from "../../assets/dollar.png"
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
     return (
         
             <div className="flex justify-between  shadow-sm mt-2 mb-4 md:pl-7 md:pr-7 sticky top-0 z-50 bg-white">
@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
                     <button className='flex gap-2 mr-3 border border-[#13131390] font-bold rounded p-3'>
-                        <p>0 Coin</p>
+                        <p>{coin} Coin</p>
                         <img className='w-6 h-6' src={imgdoller} alt="" />
                     </button>
 
