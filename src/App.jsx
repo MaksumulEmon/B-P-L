@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Players from './Players/Players'
 import Fallback from './Fallback/Fallback'
 import { ToastContainer } from 'react-toastify'
+import Fotter from './Footer/Fotter'
 
 
 // Load Data from json
@@ -26,9 +27,10 @@ function App() {
       <Suspense fallback={<Fallback></Fallback>}>
         <Players playersPromise={playersPromise} setCoin={setCoin} coin={coin}></Players>
       </Suspense>
+      <Fotter></Fotter>
 
       {/* React toastfly */}
-      <ToastContainer/>
+      <ToastContainer />
     </>
   )
 }
