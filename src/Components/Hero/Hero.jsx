@@ -3,7 +3,7 @@ import bgshadow from "../../assets/bgshadow.png"
 import heroimg from "../../assets/banner-main.png"
 const Hero = () => {
     return (
-        <div className='container mx-auto p-12 rounded-xl'
+        <div className='container mx-auto p-12 rounded-xl '
             style={{
                 background: `url(${bgshadow})`,
                 backgroundPosition: 'center',
