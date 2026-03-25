@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 
-const SelectedPlayers = () => {
+const SelectedPlayers = ({selectedPlayers}) => {
+  
+    console.log(selectedPlayers, "selectedPlayers");
     return (
         <div>
-            
+
         </div>
     );
 };
