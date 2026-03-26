@@ -16,6 +16,7 @@ const Hero = () => {
                 <img src={heroimg} height={200} width={250} alt="" />
                 <h1 className='font-bold text-4xl items-center '>Assemble Your Ultimate Dream 11 Cricket Team</h1>
                 <p className='font-light'>Beyond Boundaries Beyond Limits</p>
+                
                 <div className='p-2 border-2 rounded-xl border-[#E7FE29]'>
                     <button className="btn bg-[#E7FE29] border-0">Claim Free Credit</button>
                 </div>

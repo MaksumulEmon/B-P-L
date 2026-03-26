@@ -4,11 +4,12 @@ import Logofotter from ".././assets/logo-footer.png"
 
 const Fotter = () => {
     return (
-        <div className='bg-[#06091A] py-12'>
+        <div className='bg-[#06091A] py-12 relative mt-80'>
 
-            <div className='w-full md:w-[50%] mx-auto'>
+            <div className='w-full md:w-[50%] mx-auto p-3 border-2 border-white/20 rounded-2xl absolute  left-1/2 -translate-x-1/2 -top-60 bg-white/10 '>
+               
 
-                <div className='relative p-8 md:p-12 rounded-xl h-88 overflow-hidden'>
+                <div className='relative p-8 md:p-12 rounded-xl h-88 overflow-hidden border-0'>
 
                     {/* Background Image */}
                     <div
@@ -64,16 +65,16 @@ const Fotter = () => {
             <div className='container mx-auto mb-20'>
 
 
-                <div className='flex  justify-center items-center mt-10'>
+                <div className='flex  justify-center items-center mt-50'>
 
                     <img src={Logofotter} alt="" />
                 </div>
 
 
                 {/* Information Section */}
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-30 mt-8 '>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-30 mt-8  items-center justify-center'>
 
-                    <div className='max-w-2xs'>
+                    <div className='max-w-2xs '>
 
                         <h1 className='text-lg text-white '>About Us</h1>
                         <p className='text-[#FFFFFF99]'>We are a passionate team dedicated to providing the best services to our customers.</p>
